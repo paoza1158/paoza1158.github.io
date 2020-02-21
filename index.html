@@ -20,15 +20,16 @@
 
 <body id="bod">
 
-  <!-- Load Facebook SDK for JavaScript -->
+ <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
+     
       <!-- Your customer chat code -->
       <div class="fb-customerchat"
         attribution=setup_tool
-        page_id="102205578049323">
+        page_id="102205578049323"
+  theme_color="#6699cc">
       </div>
 
-<br><br><br><br><br><br>
 
 
     <!-- JQuery -->
@@ -40,21 +41,8 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     
-    <script>
-	wow = new WOW({
-    boxClass: 'wow', // default
-    animateClass: 'animated', // default
-    offset: 0, // default
-    mobile: true, // default
-    live: true // default
-	})
-	wow.init();
-	
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-  window.fbAsyncInit = function() {
+   <script>
+        window.fbAsyncInit = function() {
           FB.init({
             xfbml            : true,
             version          : 'v6.0'
@@ -68,7 +56,7 @@ function onClick(element) {
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-	    
+	
 	</script>
     
 </body>
